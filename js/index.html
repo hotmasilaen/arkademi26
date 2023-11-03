@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="root"></p>
+    <script>
+
+        const umur = 21;
+        const namaSiswa = 'Rian';
+        let alamat = "Medan";
+        alamat = "Jakarta"
+        var nilai = 70;
+        nilai = 85;
+
+        console.log(nilai);
+        // alert(nilai);
+        document.getElementById("root").innerHTML = 'Nilai Anda: ' + nilai;
+
+        const hargaBuku = 10000; //number
+        const hargaPencil = '1000'; //string
+        console.log('Yang harus dibayar: ', hargaBuku + hargaPencil);
+
+        const nilaiSemester = '';
+        // nilaiSemester.map((n) => console.log(n))
+
+        function countDiscount(harga, diskon) {
+            let hasil = harga - (harga * diskon)
+            return hasil;
+        }
+
+        const hargaTas = 12879000;
+        const hargaBetName = 3919000;
+        const tasSetelahDiskon = countDiscount(hargaTas, 0.1)
+        const betNameSetelahDiskon = countDiscount(hargaBetName, 0.1)
+        const totalBayar = tasSetelahDiskon + betNameSetelahDiskon
+
+        console.log('Harga Tas: ', + hargaTas);
+        console.log('Harga Bet Name: ', + hargaBetName);
+        console.log('Harga Tas setelah diskon: ', + tasSetelahDiskon);
+        console.log('Harga Bet Name setelah diskon: ', + betNameSetelahDiskon);
+        console.log('TOTAL BAYAR: ', + totalBayar);
+
+
+        const currentUsername = 'hotma1234';
+        const incomingUsername = 'hotma12345';
+        console.log('Apakah username match? ', currentUsername != incomingUsername);
+
+        const number1 = 100;
+        const number2 = '100';
+        console.log('Apakah number identical? ', number1 !== number2);
+
+        const noHp = '083764555555';
+        console.log(noHp.slice(1, 12));
+        console.log(noHp.replace('0', '+62'));
+
+        const nilaiMatematika = 70;
+
+        // if (nilaiMatematika === 75) {
+        //     console.log('Selamat! kamu lulus.');
+        // }
+        // else if (nilaiMatematika === 90) {
+        //     console.log('Selamat! kamu lulus, pertahankan prestasi kamu.');
+        // }
+        // else {
+        //     console.log('Mohon maaf, Anda perlu belajar lagi.');
+        // }
+
+        switch (nilaiMatematika) {
+            case 75:
+                console.log('Selamat! kamu lulus.');
+                break;
+            case 90:
+                console.log('Selamat! kamu lulus, pertahankan prestasi kamu.');
+                break;
+            default:
+                console.log('Mohon maaf, Anda perlu belajar lagi.');
+                break;
+        }
+
+        for (var i = 1; i <= 5; i++) {
+            console.log('Number: ', + i);
+        }
+
+        const buahBuahan = ['Apple', 'Grape', 'Banana', 'Papaya'];
+        for (var i in buahBuahan) {
+            console.log('Nama buah: ', buahBuahan[i]);
+        }
+
+    </script>
+</body>
+
+</html>

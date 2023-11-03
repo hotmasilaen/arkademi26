@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-color: yellow;
+            width: fit-content;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px black solid;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let x = document.forms['myForm'][' fname '].value
+            if (x == '') {
+                alert('Nama tidak boleh kosong!')
+                return false
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <img src="https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt="sinar-lampu" />
+    <br />
+    <p>
+        Arkademi adalah Lembaga Kursus dan Pelatihan resmi berlisensi dari Kementerian Pendidikan, Kebudayaan, Riset,
+        dan Teknologi RI
+    </p>
+    <mark>
+        Arkademi adalah Lembaga Kursus dan Pelatihan resmi berlisensi dari Kementerian Pendidikan, Kebudayaan, Riset,
+        dan Teknologi RI
+    </mark>
+    <br />
+    <br />
+    <form name="myForm" onsubmit="return validateForm()">
+        Name: <input type="text" name=" fname " />
+        <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <br />
+    <table>
+        <thead>
+            <tr>
+                <td>Nama</td>
+                <td>Alamat</td>
+                <td>No.HP</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Farhan</td>
+                <td>Medan</td>
+                <td>08347474xxx</td>
+            </tr>
+            <tr>
+                <td>Farhan</td>
+                <td>Medan</td>
+                <td>08347474xxx</td>
+            </tr>
+            <tr>
+                <td>Farhan</td>
+                <td>Medan</td>
+                <td>08347474xxx</td>
+            </tr>
+            <tr>
+                <td>Farhan</td>
+                <td>Medan</td>
+                <td>08347474xxx</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+    <b>INI ADALAH KONTEN APLIKASI SAYA</b>
+    <a href="https://prakerja.arkademi.com/">Prakerja</a>
+    <h1>
+        Kursus Online dari<br />
+        Lembaga Pelatihan Resmi untuk<br />
+        Tingkatkan Karier Profesionalmu
+    </h1>
+    <div />
+</body>
+
+</html>

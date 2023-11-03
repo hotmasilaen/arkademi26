@@ -1,0 +1,101 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#btn-masuk {
+    color: #0097f2;
+    background-color: white;
+    border: 1px solid #0097f2;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+#btn-daftar {
+    background-color: #0097f2;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+}
+
+.input-container {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-text {
+    border: none;
+}
+
+.container-2 {
+    margin-top: 10px;
+    border-top: 1px solid rgb(210, 210, 210);
+    background: linear-gradient(212.98deg, #fff 24.38%, #f6f7fb 91.2%);
+    padding: 2rem 10rem;
+    display: flex;
+    gap: 8rem;
+
+}
+
+#btn-voucher {
+    font-family: "Montserrat", sans-serif;
+    background: #f9821f;
+    padding: 15px 0;
+    width: calc(45% - 6.5px);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    color: #fff;
+}
+
+#btn-sertifikat {
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+    padding: 12px 0;
+    width: calc(45% - 6.5px);
+    border-radius: 5px;
+    border: 0.8px solid #a2a8b5;
+    outline: none;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 19px;
+    color: #06284f;
+}
+
+.link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 13.97px;
+    color: #2c95eb;
+}
